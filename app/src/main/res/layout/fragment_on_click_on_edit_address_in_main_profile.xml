@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".UserProfile.OnClickOnEditAddressInMainProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/address_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Enter Your Address"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Address is essential for product delivery.Please enter you work(office) address or home address" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_edit_address_fragment_House_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/home_address"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="House address and House no"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/editText_edit_address_fragment_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/landmark_address"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="landmark or commomn place"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/editText_edit_address_fragment_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/state_address"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Your state name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/editText_edit_address_fragment_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/city_address"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Enter your city name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/editText_edit_address_fragment_areapin_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/area_pin_code_address"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Area pin code"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/editText_edit_address_fragment_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Additional mobile number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/save_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/google_button"
+                android:elevation="10dp"
+                android:text="Save Address"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

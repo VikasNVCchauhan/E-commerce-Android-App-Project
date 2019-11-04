@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@drawable/puma"
+            android:padding="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Firstly you have to select account type. Please select are you seller or buyer ? "
+        />
+
+    <Button
+        android:id="@+id/buyer_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_button"
+        android:elevation="5dp"
+        android:text="Buyer Account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/seller_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/facebook_button"
+        android:elevation="5dp"
+        android:text="Seller Account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+</LinearLayout>

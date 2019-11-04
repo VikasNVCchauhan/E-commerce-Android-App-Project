@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile.OnClickOnEditImageInMainPrifilefragmentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ecedebed">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/choose_merchant_product_image_butoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/google_button"
+                    android:elevation="7dp"
+                    android:text="Choose Image"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/upload_merchant_product_image_butoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/facebook_button"
+                    android:elevation="7dp"
+                    android:text="Upload Image"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_view_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_buttons"
+            android:layout_marginTop="4sp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Please Select Image and Upload on Galaxy cart for best gifts and plans"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_view_top"
+            android:layout_marginTop="4dp"
+            android:padding="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circuler__merchant_product_image_view_edit_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@mipmap/women_horizontal_recycler_view"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+            <ImageView
+                android:id="@+id/clickImage"
+                android:src="@mipmap/camera"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

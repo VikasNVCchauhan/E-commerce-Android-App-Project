@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="5dp">
+
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/card_view_order_delivered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_profile1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/image_view_after_click_on_merchant_order_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@color/colorPrimaryDark" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_profile1"
+            android:layout_marginTop="5dp"
+            android:elevation="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/brand_name_aftr_click_on_merchant_order_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nike"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/three_dot_option_aftr_click_on_merchant_order_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="end"
+                        android:src="@drawable/option_menu_dots"
+                        android:text="Nike"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/product_description_aftr_click_on_merchant_order_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nike Round  neck blue color T-shirt "
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/product_actual_cost_aftr_click_on_merchant_order_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Actual Cost : Rs. 3000/-"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_address"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/product_quantity_aftr_click_on_merchant_order_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity : 1"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/product_payment_type_aftr_click_on_merchant_order_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Payment Type : COD "
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/product_orderded_date_click_on_merchant_order_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Date : 16 Jan,2018"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_user_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_profile_image"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ordered Area/City : "
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/ordered_product_area_aftr_click_on_merchant_order_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chandigarh (Punjab)"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/are_address_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_user_order"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textAllCaps="true" />
+
+
+                <TextView
+                    android:id="@+id/address_line1_click_on_merchant_order_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address Line 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/address_line2_click_on_merchant_order_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address Line 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/address_line3_click_on_merchant_order_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address Line 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/address_line4_click_on_merchant_order_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address Line 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_order_delivery_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/are_address_card_view"
+            android:layout_marginTop="6dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Status : "
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status_of_order_aftr_click_on_merchant_order_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered Sucessfully"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/card_view_order_delivered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/confirm_order_button_aftr_click_on_merchant_order_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/facebook_button"
+                android:elevation="15dp"
+                android:text="Confirm Order"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

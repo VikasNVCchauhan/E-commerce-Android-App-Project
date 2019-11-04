@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_view_list_item_of_cart"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/women_horizontal_recycler_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/brand_name_text_view_list_item_of_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Brand Name" />
+
+                        <TextView
+                            android:id="@+id/product_name_text_view_list_item_of_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2sp"
+                            android:maxLines="1"
+                            android:text="Dk11138-5 Two Tone/Silver Analog" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/option_menu_cart_list_item"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/option_menu_dots" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4sp"
+                            android:text="Size"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/size_of_product_text_view_list_item_of_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="4sp"
+                            android:text="10"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="4sp"
+                            android:text="|"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="4sp"
+                            android:text="Qty"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/quantity_of_product_text_view_list_item_of_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="4sp"
+                            android:text="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4sp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cost_off_on_product_in_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="55"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Ratings "
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/number_of_people_rated_product_text_view_list_item_of_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="4sp"
+                            android:text="200 "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/colorPrimary"
+                            android:orientation="horizontal"
+                            android:paddingBottom="1dp"
+                            android:paddingLeft="4sp"
+                            android:paddingRight="4dp"
+                            android:paddingTop="1dp">
+
+                            <TextView
+                                android:id="@+id/text_view_ratings_of_product_list_items"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="4.3"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:text="*"
+                                android:textColor="@android:color/white" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4sp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cost_off_on_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2000"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8sp"
+                            android:layout_marginTop="4sp"
+                            android:text="Delivery By"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/delivery_date_list_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4sp"
+                            android:text="18 July,2018"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4sp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5sp"
+                            android:gravity="end"
+                            android:src="@mipmap/indian_rupees_sign"
+                            android:textColor="@android:color/holo_red_dark" />
+
+                        <TextView
+                            android:id="@+id/grand_total_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2000"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single"
+        android:visible="true">
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/home_bottum_menu"
+            android:title="Home" />
+        <item
+            android:id="@+id/user_profile_menu"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/wishList_menu"
+            android:icon="@drawable/wishlist_added"
+            android:title="WishList" />
+        <item
+            android:id="@+id/userCart_menu"
+            android:icon="@drawable/cart"
+            android:title="Cart" />
+        <item
+            android:id="@+id/order_menu"
+            android:icon="@drawable/my_order"
+            android:title="My Order" />
+        <item
+            android:id="@+id/address_menu"
+            android:icon="@drawable/address_menu"
+            android:title="Address" />
+        <item android:title="Products">
+            <menu>
+                <item
+                    android:id="@+id/fashionProduct_menu"
+                    android:icon="@drawable/profile"
+                    android:title="Fashion" />
+                <item
+                    android:id="@+id/woman_products_menu"
+                    android:icon="@drawable/woman"
+                    android:title="Women" />
+                <item
+                    android:id="@+id/men_products_menu"
+                    android:icon="@drawable/men"
+                    android:title="Men " />
+            </menu>
+        </item>
+        <item android:title="More">
+            <menu>
+                <item
+                    android:id="@+id/help_menu"
+                    android:icon="@drawable/help"
+                    android:title="Help" />
+                <item
+                    android:id="@+id/terms_conditions_menu"
+                    android:icon="@drawable/profile"
+                    android:title="Terms And Conditions" />
+                <item
+                    android:id="@+id/logout_menu"
+                    android:icon="@drawable/logout"
+                    android:title="LogOut" />
+            </menu>
+        </item>
+    </group>
+</menu>

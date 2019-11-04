@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group_wish_list">
+        <item
+            android:id="@+id/toolbar_search"
+            android:icon="@drawable/ic_search_white"
+            android:title="Search"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/toolbar_wish_list"
+            android:icon="@drawable/wishlist_white"
+            android:title="wish list"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/toolbar_order"
+            android:icon="@drawable/order_white"
+            android:title="Cart"
+            app:showAsAction="always" />
+    </group>
+</menu>

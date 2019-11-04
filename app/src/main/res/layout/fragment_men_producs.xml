@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frameLayoutBackgroundHome"
+    tools:context=".MenProducts.MenProducsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_for_filters"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/switch_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.3"
+                    android:background="@drawable/background_for_filters"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/ic_view_list" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/sort_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_for_filters"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_sort" />
+
+                        <TextView
+                            android:id="@+id/shortBy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="Short"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/filter_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_for_filters"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_filter_list" />
+
+                        <TextView
+                            android:id="@+id/filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:text="Filter"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarInmenProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_for_filters"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_ment_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_layout_for_filters"
+            android:layout_marginTop="1.2dp"
+            android:orientation="vertical"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</FrameLayout>

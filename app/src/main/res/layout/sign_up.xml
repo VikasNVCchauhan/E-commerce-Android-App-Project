@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/puma" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="You can't change mobile number here for changing mobile number you have to firstly verify it  "
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/editText_SignupActivity_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="First name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/editText_SignupActivity_LastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="last name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_SignupActivity_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter email address"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText_SignupActivity_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:hint="Enter phone number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText_SignupActivity_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Set the password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText_SignupActivity_Resetpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Re-enter the password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/signup_Activty_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_button"
+            android:elevation="5dp"
+            android:text="Sign up" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="5dp" />
+    </LinearLayout>
+</LinearLayout>

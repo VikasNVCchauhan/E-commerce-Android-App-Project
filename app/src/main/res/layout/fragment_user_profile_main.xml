@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7ebeb"
+    tools:context=".UserProfile.UserProfileMainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10sp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_View_user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="#617eff"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circulerImageView_user_profile"
+                        android:layout_width="130dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="15dp"
+                        android:src="@mipmap/women_horizontal_recycler_view"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_name_user_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galaxy Cart"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/email_address_user_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="galaxycart.zero@gmail.com"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/add_image_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email_address_user_profile"
+                        android:layout_marginTop="4dp"
+                        android:autoSizeTextType="uniform"
+                        android:elevation="6dp"
+                        android:text="Add Image"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/address_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_View_user_profile"
+            android:layout_marginTop="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_marginLeft="10dp"
+                    android:text="Home address and house number"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/address_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_line1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Land mark and tehsil"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/address_line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_line2"
+                    android:layout_marginLeft="10dp"
+                    android:text="State Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/address_line4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_line3"
+                    android:layout_marginLeft="10dp"
+                    android:text="City"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/address_line5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_line4"
+                    android:layout_marginLeft="10dp"
+                    android:text="Area pin code"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/address_line6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_line5"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="mobile Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/edit_address_card_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/address_line5"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Edit "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_profile"
+            android:layout_below="@+id/address_card_view"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="4dp">
+
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/list_view_user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="1dp">
+
+            </ListView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/login_button"
+            android:elevation="7dp"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</FrameLayout>

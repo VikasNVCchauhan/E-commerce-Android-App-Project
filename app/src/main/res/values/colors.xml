@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff841f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff841f</color>
+    <color name="colorFacebook">#4644a4</color>
+    <color name="colorGoogle">#c72b3a</color>
+    <color name="colorLoginhere">#339ef6</color>
+    <color name="whiteBackground">#fcfcfc</color>
+    <color name="transparentBackground">@null</color>
+    <color name="productCompanyName">#5a5a5a</color>
+    <color name="frameLayoutBackgroundHome">#cbcbcb</color>
+    <color name="merchantTabColour">#7dfb7702</color>
+    <color name="liteColourForEditProfileCardView1">#5095cbbf</color>
+    <color name="liteColourForEditProfileCardView2">#3ed9add9</color>
+</resources>

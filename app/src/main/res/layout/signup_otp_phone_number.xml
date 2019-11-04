@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@drawable/puma" />
+
+        <EditText
+            android:id="@+id/editText_mobile_Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter phone number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/editText_pasword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/editText_re_Enter_pasword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Re-Enter password "
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/signup_OtpActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_button"
+            android:elevation="5dp"
+            android:text="Sign Up" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:text="Already have an account ?"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/otp_text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:elevation="4dp"
+            android:text="login Here"
+            android:textColor="#051f86"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

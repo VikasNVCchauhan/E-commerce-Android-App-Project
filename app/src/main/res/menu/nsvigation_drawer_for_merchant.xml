@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single"
+        android:visible="true">
+        <item
+            android:id="@+id/home_menu_merchant"
+            android:icon="@drawable/home_bottum_menu"
+            android:title="Home" />
+        <item
+            android:id="@+id/user_profile_menu_merchant"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/analytics_merchant"
+            android:icon="@drawable/analytics"
+            android:title="Analytics" />
+        <item
+            android:id="@+id/payment_merchant"
+            android:icon="@drawable/payment_merchant"
+            android:title="Paymets" />
+        <item
+            android:id="@+id/setting_merchant"
+            android:icon="@drawable/setting_profile"
+            android:title="Setting" />
+        <item
+            android:id="@+id/logout_merchant"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

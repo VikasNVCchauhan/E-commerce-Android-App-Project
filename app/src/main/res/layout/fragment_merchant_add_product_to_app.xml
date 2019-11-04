@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".UserProfile.OnClickOnEditAddressInMainProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/lininear_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/address_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fill The Product Detail"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_view_suheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lininear_layout_top"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Please select and fill the relevant detail of product because due to this detain user would reach to his/her relevant products" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/save_address"
+            android:layout_below="@+id/txt_view_suheading"
+            android:layout_marginTop="2dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editText_add_product_fragment_Product_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@mipmap/category"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Product Category"
+                        android:maxEms="10"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/editText_add_product_fragment_Product_brand_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/brands"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Brand Name"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/editText_add_product_fragment_Product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/product"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Product Name"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/editText_add_product_fragment_Product_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/gender"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Select Gender"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/editText_add_product_fragment_Product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/price"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Enter price of product "
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/editText_add_product_fragment_Product_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/descripition"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Product Description"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/save_Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/google_button"
+            android:elevation="10dp"
+            android:text="Save Data"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</FrameLayout>

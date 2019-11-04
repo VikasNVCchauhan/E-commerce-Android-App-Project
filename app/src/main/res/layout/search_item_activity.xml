@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_search_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <!--Here data is taken by edit text for searching data in data base-->
+        <EditText
+            android:focusable="true"
+            android:inputType="text"
+            android:scrollHorizontally="true"
+            android:paddingLeft="15dp"
+            android:id="@+id/searchBar_search_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/searchbar_for_main_navigation"
+            android:drawableRight="@drawable/search_icon"
+            android:hint="Search for products, Brand and More"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/image_button_search"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container_search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar_layout">
+    </FrameLayout>
+</RelativeLayout>

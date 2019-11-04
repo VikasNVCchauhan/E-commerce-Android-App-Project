@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".UserProfile.OnEditButtonClickProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="5dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_profile1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:cardBackgroundColor="@color/liteColourForEditProfileCardView1"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGoogle"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:src="@drawable/profile" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="User Profile"
+                                android:textColor="@android:color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_detail1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_detail"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.7"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/profile" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name "
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/text_view_user_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vikas chauhan"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_detail2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_detail1"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.7"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/email" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email "
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/text_view_user_email_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="galaxyCart.zero@gmail.com"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_detail3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_detail2"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.7"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/phone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Phone "
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/text_view_user_phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9584746356"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_detail4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_detail3"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.7"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/password" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Password "
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/text_view_user_password"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPassword"
+                                    android:text="********"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/text_view_user_profile_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_detail3"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Edit "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        android:layout_height="" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_profile1"
+                    android:layout_marginTop="5dp"
+                    android:elevation="7dp"
+                    app:cardBackgroundColor="@color/liteColourForEditProfileCardView2"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGoogle"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:src="@drawable/address_menu" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="User Address"
+                                android:textColor="@android:color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_address"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/home_address" />
+
+                            <TextView
+                                android:id="@+id/text_view_user_House_address_or_house_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Home address / House no"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_address1"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/landmark_address" />
+
+                            <TextView
+                                android:id="@+id/text_view_user_address_landmark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Landmark"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_address3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_address2"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/state_address" />
+
+                            <TextView
+                                android:id="@+id/text_view_address_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="State"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_address4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_address3"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/city_address" />
+
+                            <TextView
+                                android:id="@+id/text_view_address_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="City"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_address5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_address4"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/area_pin_code_address" />
+
+                            <TextView
+                                android:id="@+id/text_view_address_area_pin_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Area Pin Code"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_address6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_address5"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/phone" />
+
+                            <TextView
+                                android:id="@+id/text_view_address_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Phone"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/text_view_user_address_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_address5"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Edit "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_address"
+                    android:layout_marginTop="6dp"
+                    app:cardBackgroundColor="@color/liteColourForEditProfileCardView1"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGoogle"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:src="@drawable/profile" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="Profile Image"
+                                android:textColor="@android:color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_addres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_profile_image"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/circuler_image_view_profile_image"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:src="@mipmap/women_horizontal_recycler_view" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="To change you your profile picture clicl on edit button and change profile picture"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:id="@+id/text_view_image_edit_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="Galaxy Cart"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_view_image_edit_email_addrrsss"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text_view_image_edit_name"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="5dp"
+                                    android:text="galaxycart.zero@gmail.com"
+                                    android:textColor="@android:color/black" />
+
+                                <TextView
+                                    android:id="@+id/text_view_user_image_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginRight="4dp"
+                                    android:text="Edit "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_user_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_profile_image"
+                    android:layout_marginTop="6dp"
+                    app:cardBackgroundColor="@color/liteColourForEditProfileCardView2"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGoogle"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:src="@drawable/my_order" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="Your Orders"
+                                android:textColor="@android:color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_user_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_user_order"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/circuler_image_view_user_order_image"
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:src="@mipmap/women_horizontal_recycler_view" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp">
+
+                                <TextView
+                                    android:id="@+id/text_view_user_order_company_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Nike"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_view_user_order_product_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text_view_user_order_company_name"
+
+                                    android:text="Nike round neck t-shirt" />
+
+                                <LinearLayout
+                                    android:id="@+id/layout_order_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text_view_user_order_product_description"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="14dp"
+                                        android:layout_height="12dp"
+                                        android:layout_marginTop="6dp"
+                                        android:src="@mipmap/indian_rupees_sign" />
+
+                                    <TextView
+                                        android:id="@+id/text_view_user_order_product_cost"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="4dp"
+                                        android:text="10,000"
+                                        android:textColor="@android:color/black" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/layout_order_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/layout_order_price"
+
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:text="Order no : "
+                                        android:textColor="@android:color/black" />
+
+                                    <TextView
+                                        android:id="@+id/text_view_user_order_number"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:text="10839392389283"
+                                        android:textColor="@android:color/black" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/text_view_user_view_all_orders"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:text="View more "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

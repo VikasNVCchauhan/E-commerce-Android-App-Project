@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Login Sqlite Data</string>
+    <string name="open"></string>
+    <string name="close"></string>
+
+    <!--TODO: string decleration for horizontal recycler view -->
+    <string name="WomenHorizontal">Women</string>
+    <string name="MenHorizontal">Men</string>
+    <string name="FashionHorizontal">Fashion</string>
+    <string name="DailyNeedHorizontal">DailyNeed</string>
+    <string name="KidsHorizontal">Kids</string>
+    <string name="ElectronicsHorizontal">Electronics</string>
+    <string name="SportsHorizontal">Sports</string>
+    <string name="BeautyHorizontal">Beauty</string>
+
+    <string name="WomenHorizontalLinks">https://image.ibb.co/dHsb2T/horizontal_recycler_view_women_jpg.jpg</string>
+    <string name="MenHorizontalLinks">https://image.ibb.co/hnRpp8/men_horizontal_recycler_view.jpg</string>
+    <string name="FashionHorizontalLinks">https://preview.ibb.co/eg8Vwo/fashion_horizontal_recycler_view.jpg</string>
+    <string name="DailyNeedHorizontalLinks">https://preview.ibb.co/bA7vU8/daily_need_horizontal_recycler_view.jpg</string>
+    <string name="KidsHorizontalLinks">https://preview.ibb.co/cXrYGo/kids_horizontal_recycler_view.jpg</string>
+    <string name="ElectronicsHorizontalLinks">https://preview.ibb.co/mDkwK8/electronics_products.jpg</string>
+    <string name="SportsHorizontalLinks">https://preview.ibb.co/iuxUp8/sports_horizontal_recycler_view.jpg</string>
+    <string name="BeautyHorizontalLinks">https://image.ibb.co/hnfPp8/beauty_horizontal_recycler_view.jpg</string>
+
+    <string-array name="banner_array">
+        <item>https://preview.ibb.co/dz12Ro/banner_image1.jpg"</item>
+        <item>https://image.ibb.co/d5EmK8/banner_image2.png</item>
+        <item>https://preview.ibb.co/kV1oXT/banner_image3.jpg</item>
+        <item>https://preview.ibb.co/bWkFCT/banner_image4.jpg</item>
+        <item>https://preview.ibb.co/b3kAe8/banner_image5.jpg</item>
+    </string-array>
+
+
+    <string-array name="cityNames">
+        <item>Shimla</item>
+        <item>Chandigarh</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Ahmedabad</item>
+        <item>Patna</item>
+        <item>Bhopal</item>
+        <item>Lucknow</item>
+        <item>kolkata</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>Chennai</item>
+        <item>Surat</item>
+        <item>Pune</item>
+        <item>Thane</item>
+        <item>Indore</item>
+        <item>Visakhapatnam</item>
+        <item>Vadodara</item>
+        <item>Ghaziabad</item>
+        <item>Agra</item>
+        <item>Aurangabad</item>
+        <item>Amritsar</item>
+    </string-array>
+
+    <string-array name="StateNames">
+        <item>Andra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>TamilNadu</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>UttarPradesh</item>
+        <item>WestBengal</item>
+    </string-array>
+
+    <string-array name="AddProductMerchantGenderSelection">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="AddProductMerchantProductCategorySelection">
+        <item>Men Cloths</item>
+        <item>Womem Cloths</item>
+        <item>Electronics</item>
+        <item>Beauty Products</item>
+        <item>Kids Products</item>
+        <item>Health Products</item>
+        <item>Daily Need Products</item>
+        <item>Sports Products</item>
+        <item>Books</item>
+        <item>Home Applinces</item>
+        <item>Electronics Gadgets</item>
+    </string-array>
+
+    <string-array name="AddProductMerchantClothBrandNameSelection">
+        <item>Arrow</item>
+        <item>Parx</item>
+        <item>John Players</item>
+        <item>Park Avenue</item>
+        <item>Van Heusen</item>
+        <item>Blackberry</item>
+        <item>Nike</item>
+        <item>Puma</item>
+        <item>Reebok</item>
+        <item>Levis</item>
+        <item>Wrangler</item>
+        <item>Lee</item>
+        <item>Pepe Jeans London</item>
+        <item>Flying Machine</item>
+        <item>Diesel</item>
+        <item>Van Heusen</item>
+        <item>Blackberry</item>
+
+    </string-array>
+    <string-array name="AddProductMerchantEectronicsGadgetsBrandNameSelection">
+        <item>SAMSUNG</item>
+        <item>APPLE</item>
+        <item>NOKIA</item>
+        <item>SONY</item>
+        <item>LG</item>
+        <item>HTC</item>
+        <item>MOTOROLA</item>
+        <item>HUAWEI</item>
+        <item>MICROSOFT</item>
+        <item>LENOVO</item>
+        <item>XIAOMI</item>
+        <item>GOOGLE</item>
+        <item>ACER</item>
+        <item>ASUS</item>
+        <item>OPPO</item>
+        <item>ONEPLUS</item>
+        <item>MEIZU</item>
+        <item>BLACKBERRY</item>
+        <item>ZTE</item>
+        <item>TOSHIBA</item>
+        <item>VODAFONE</item>
+        <item>LAVA</item>
+        <item>MICROMAX</item>
+        <item>VIVO</item>
+        <item>LEECO</item>
+        <item>PANASONIC</item>
+        <item>HP</item>
+    </string-array>
+
+    <string name="permissionMessage">Please enable all permissions</string>
+
+    <string name="emptyOrderFragment">Still you having no order please search your order over 10 million Best quality products </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
