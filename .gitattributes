@@ -1,2 +1,2 @@
-*.android linguist-detectable=true
+*.xml linguist-detectable=true
 *.java linguist-detectable=false
